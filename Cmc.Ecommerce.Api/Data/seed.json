@@ -1,0 +1,68 @@
+[
+	{
+		"name": "Black Shirt",
+		"description": "Simple black t-shirt.",
+		"price": 8.0,
+		"image": "shirt-black.jpg"
+	},
+	{
+		"name": "Green Shirt",
+		"description": "Simple green t-shirt.",
+		"price": 8.0,
+		"image": "shirt-green.jpg"
+	},
+	{
+		"name": "Red Shirt",
+		"description": "Simple red t-shirt.",
+		"price": 8.0,
+		"image": "shirt-red.jpg"
+	},
+	{
+		"name": "Blue Sneaker",
+		"description": "Cool blue sneakers. One you must have.",
+		"price": 8.0,
+		"image": "sneaker-blue.jpg"
+	},
+	{
+		"name": "Hightop Red Sneaker",
+		"description": "Eyecatching red hightops.",
+		"price": 19.9,
+		"image": "sneaker-hightop-red.jpg"
+	},
+	{
+		"name": "Hightop Red/White Sneaker",
+		"description": "Red and white hightops for everyone.",
+		"price": 10.9,
+		"image": "sneaker-hightop-red-white.jpg"
+	},
+	{
+		"name": "Multicolor Sneaker",
+		"description": "Custom made design shoes.",
+		"price": 19.9,
+		"image": "sneaker-multicolor.jpg"
+	},
+	{
+		"name": "Red Sneaker",
+		"description": "Awesome red sneakers, extremely comfortable.",
+		"price": 25.9,
+		"image": "sneaker-red.jpg"
+	},
+	{
+		"name": "Red Skate Sneaker",
+		"description": "Shoes for every skater.",
+		"price": 19.9,
+		"image": "sneaker-skate-red.jpg"
+	},
+	{
+		"name": "White/Orange/Purple Sneaker",
+		"description": "New design available now.",
+		"price": 49.99,
+		"image": "sneaker-white-orange-purple.jpg"
+	},
+	{
+		"name": "White/Pink Sneaker",
+		"description": "White and pink styled sneakers.",
+		"price": 50.9,
+		"image": "sneaker-white-pink.jpg"
+	}
+]

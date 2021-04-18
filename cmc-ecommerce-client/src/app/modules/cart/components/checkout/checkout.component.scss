@@ -1,0 +1,36 @@
+@import '~bootstrap/scss/bootstrap';
+
+.title {
+	margin-bottom: 5em;
+}
+
+.card {
+	width: inherit;
+	background-color: $light;
+	border-radius: 1em;
+}
+
+.container {
+	background-color: $light;
+	border-radius: 1em;
+	width: 40%;
+	min-height: 50em;
+
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	padding: 4em;
+	button {
+		bottom: 0;
+	}
+}
+p {
+	margin-top: 2em;
+	font-size: 1.4em;
+}
+form {
+	height: 100%;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.2em;
+}

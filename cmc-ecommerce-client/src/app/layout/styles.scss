@@ -1,0 +1,55 @@
+// a,
+// a:visited,
+// a:hover {
+// 	color: #1976d2;
+// 	text-decoration: none;
+// }
+
+// a:hover {
+// 	color: #125699;
+// }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+.background-gradient {
+	z-index: -1;
+	position: fixed;
+	bottom: 0;
+	top: 0;
+	width: 100%;
+	background: radial-gradient(circle, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0) 100%);
+}
+
+.mosaic {
+	z-index: -1000;
+	position: absolute;
+	top: 0;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 0;
+}
+
+.tile img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.tile:nth-child(1) {
+	grid-column: span 4;
+	grid-row: span 2;
+}
+
+.tile:nth-child(2),
+.tile:nth-child(3) {
+	grid-column: span 2;
+}
+
+.tile:nth-child(4),
+.tile:nth-child(5) {
+	grid-column: span 3;
+}
+
+.container {
+	margin-top: 10em;
+	height: 20em;
+}

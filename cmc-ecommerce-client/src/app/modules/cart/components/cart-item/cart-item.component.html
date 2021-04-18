@@ -1,0 +1,18 @@
+<div class="row border-top border-bottom">
+	<div class="row main align-items-center">
+		<div class="col-2"><img class="img-fluid" src="assets/images/{{ cartProduct.image }}" /></div>
+		<div class="col">
+			<div class="row">{{ cartProduct.name }}</div>
+			<div class="row">cartProduct.description</div>
+		</div>
+		<div class="col">
+			<button class="btn btn-small btn-primary" (click)="decrementQuantity()">-</button>
+			<span>{{ cartProduct.quantity }}</span>
+			<button class="btn btn-small btn-primary" (click)="incrementQuantity()">+</button>
+		</div>
+		<div class="col">
+			${{ cartProduct.price * cartProduct.quantity | number: '.2' }}
+			<button class="btn btn-s btn-danger" (click)="deleteItem()">&#10005;</button>
+		</div>
+	</div>
+</div>

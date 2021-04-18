@@ -1,0 +1,13 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-row-gap: 4em;
+	grid-column-gap: 4em;
+	width: 80em;
+	margin: 0 auto 0 auto;
+	padding: 5em 0 5em 0;
+
+	div {
+		min-width: 20em;
+	}
+}

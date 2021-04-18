@@ -1,0 +1,30 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar bg-dark">
+	<a class="navbar-brand" routerLink="">
+		<img src="assets/logo/logo-brand.svg" alt="navbar-logo" />
+	</a>
+	<div class="container-fluid">
+		<div class="navbar-nav">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" routerLink="/products" routerLinkActive="active">Products</a>
+				</li>
+			</ul>
+		</div>
+		<ng-container *ngIf="cartSize > 0; else disableButton">
+			<div class="navbar-nav">
+				<button class="btn-cart btn btn-lg btn-primary" [routerLink]="['/cart']">
+					<i class="fas fa-shopping-cart"></i>
+					<i class="cart-items-value">{{ cartSize }}</i>
+				</button>
+			</div>
+		</ng-container>
+		<ng-template #disableButton>
+			<div class="navbar-nav">
+				<button disabled="true" class="btn-cart btn btn-lg btn-primary" [routerLink]="['/cart']">
+					<i class="fas fa-shopping-cart"></i>
+					<i class="cart-items-value">{{ cartSize }}</i>
+				</button>
+			</div>
+		</ng-template>
+	</div>
+</nav>

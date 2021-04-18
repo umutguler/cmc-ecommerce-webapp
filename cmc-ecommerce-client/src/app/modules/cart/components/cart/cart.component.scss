@@ -1,0 +1,36 @@
+@import '~bootstrap/scss/bootstrap';
+
+.title {
+	margin-bottom: 5em;
+}
+
+.card {
+	width: inherit;
+	background: radial-gradient(circle, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0) 100%);
+	border-radius: 1em;
+}
+
+.cart {
+	background-color: $light;
+	padding: 4em 5em;
+	border-bottom-left-radius: 1rem;
+	border-top-left-radius: 1rem;
+}
+
+.summary {
+	display: flex;
+	flex-direction: column;
+	background-color: #4dc3ff;
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	padding: 4em;
+	button {
+		bottom: 0;
+	}
+}
+
+form {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}

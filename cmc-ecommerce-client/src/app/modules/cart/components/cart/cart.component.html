@@ -1,0 +1,51 @@
+<div class="container d-flex ng-view" autoscroll="true">
+	<div class="card mx-auto my-auto">
+		<div class="row">
+			<div class="col-md-8 cart">
+				<div class="title">
+					<div class="row">
+						<div class="col align-self-center">
+							<h4>Shopping Cart</h4>
+						</div>
+					</div>
+				</div>
+				<ng-container *ngFor="let item of cartProducts | keyvalue">
+					<app-cart-item
+						[cartProduct]="item.value"
+						(decrementEvent)="decrementEvent($event)"
+						(incrementEvent)="incrementEvent($event)"
+						(deleteEvent)="deleteEvent($event)"
+					></app-cart-item>
+				</ng-container>
+				<button class="btn btn-lg btn-secondary" [routerLink]="['/products']">Back to Products</button>
+			</div>
+			<div class="col summary d-flex">
+				<form>
+					<h5>Summary</h5>
+					<div class="form-group mt-auto">
+						<div class="form-group">
+							<p>Shipping</p>
+							<select class="forn-control">
+								<option *ngIf="shippingPrice == '10.0'">Standard-Delivery- $10.00</option>
+								<option *ngIf="shippingPrice == '20.0'">Premium-Delivery- $20.00</option>
+							</select>
+						</div>
+						<div class="form-group row">
+							<div class="col">Sub-total Price</div>
+							<div class="col text-right">${{ subTotalPrice | number: '.2' }}</div>
+						</div>
+						<div class="form-group row">
+							<div class="col">Total Price</div>
+							<div class="col text-right">${{ subTotalPrice + shippingPrice | number: '.2' }}</div>
+						</div>
+						<div class="form-group row">
+							<button class="form-control btn btn-lg btn-success mt-auto" [routerLink]="['/checkout']">
+								Checkout
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
